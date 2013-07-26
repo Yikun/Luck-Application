@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D3B5CAFE-F176-43E7-9766-3ED0C3B4F09A}</ProjectGuid>
+    <RootNamespace>luckapp</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bitmap3.bmp" />
+    <None Include="res\button1.bmp" />
+    <None Include="res\button1.png" />
+    <None Include="res\button1_1.bmp" />
+    <None Include="res\button1_1.png" />
+    <None Include="res\button1_2.bmp" />
+    <None Include="res\button1_2.png" />
+    <None Include="res\button2.bmp" />
+    <None Include="res\button2.png" />
+    <None Include="res\button2_1.bmp" />
+    <None Include="res\button2_1.png" />
+    <None Include="res\button2_2.bmp" />
+    <None Include="res\button2_2.png" />
+    <None Include="res\luckapp.ico" />
+    <None Include="res\luckapp.rc2" />
+    <None Include="res\luckapp_ui.bmp" />
+    <None Include="res\luckapp_ui.png" />
+    <None Include="res\photo.bmp" />
+    <None Include="res\pic\photo01.bmp" />
+    <None Include="res\pic\photo02.bmp" />
+    <None Include="res\pic\photo03.bmp" />
+    <None Include="res\pic\photo04.bmp" />
+    <None Include="res\pic\photo05.bmp" />
+    <None Include="res\pic\photo06.bmp" />
+    <None Include="res\pic\photo07.bmp" />
+    <None Include="res\pic\photo08.bmp" />
+    <None Include="res\pic\photo09.bmp" />
+    <None Include="res\pic\photo10.bmp" />
+    <None Include="res\pic\photo11.bmp" />
+    <None Include="res\pic\photo12.bmp" />
+    <None Include="res\pic\photo13.bmp" />
+    <None Include="res\pic\photo14.bmp" />
+    <None Include="res\pic\photo15.bmp" />
+    <None Include="res\pic\photo16.bmp" />
+    <None Include="res\pic\photo17.bmp" />
+    <None Include="res\pic\photo18.bmp" />
+    <None Include="res\pic\photo19.bmp" />
+    <None Include="res\pic\photo20.bmp" />
+    <None Include="res\pic\photo21.bmp" />
+    <None Include="res\pic\photo22.bmp" />
+    <None Include="res\pic\photo23.bmp" />
+    <None Include="res\pic\photo24.bmp" />
+    <None Include="res\pic\photo25.bmp" />
+    <None Include="res\pic\photo26.bmp" />
+    <None Include="res\pic\photo27.bmp" />
+    <None Include="res\pic\photo28.bmp" />
+    <None Include="res\pic\photo29.bmp" />
+    <None Include="res\pic\photo30.bmp" />
+    <None Include="res\pic\photo31.bmp" />
+    <None Include="res\pic\photo32.bmp" />
+    <None Include="res\pic\photo33.bmp" />
+    <None Include="res\pic\photo34.bmp" />
+    <None Include="res\pic\photo35.bmp" />
+    <None Include="res\pic\photo36.bmp" />
+    <None Include="res\pic\photo37.bmp" />
+    <None Include="res\pic\photo38.bmp" />
+    <None Include="res\pic\photo39.bmp" />
+    <None Include="res\pic\photo40.bmp" />
+    <None Include="res\pic\photo41.bmp" />
+    <None Include="res\pic\photo42.bmp" />
+    <None Include="res\pic\photo43.bmp" />
+    <None Include="res\pic\photo44.bmp" />
+    <None Include="res\pic\photo45.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BmpButton.h" />
+    <ClInclude Include="luckapp.h" />
+    <ClInclude Include="luckappDlg.h" />
+    <ClInclude Include="LuckList.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BmpButton.cpp" />
+    <ClCompile Include="luckapp.cpp" />
+    <ClCompile Include="luckappDlg.cpp" />
+    <ClCompile Include="LuckList.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="luckapp.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="luckapp.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
